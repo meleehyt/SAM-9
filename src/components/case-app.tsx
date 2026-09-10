@@ -195,13 +195,16 @@ export function CaseApp() {
       </section>
 
       <footer className="border-t border-stone px-4 py-10 text-center">
-        <p className="font-mono text-xs tracking-wide text-ink-subtle">
-          {CASE.number} · {CASE.venue} · مقر التحكيم: {CASE.seat}
-        </p>
-        <p className="mt-2 text-sm text-ink-muted">
-          ملف داخلي للأحداث الموثقة — لا يُعد حكماً أو إقراراً بالوقائع المتنازع عليها.
-        </p>
-      </footer>
+  <p className="font-mono text-xs tracking-wide text-ink-subtle">
+    {CASE.number} · {CASE.venue} · مقر التحكيم: {CASE.seat}
+  </p>
+  <p className="mt-2 text-sm text-ink-muted">
+    ملف داخلي للأحداث الموثقة — لا يُعد حكماً أو إقراراً بالوقائع المتنازع عليها
+  </p>
+  <p className="mt-1 text-sm font-medium text-red-600">
+    Abdulrahman Ahmed insta (meleehly)
+  </p>
+</footer>
     </div>
   );
 }
