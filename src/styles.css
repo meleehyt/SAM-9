@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans Arabic", "Noto Sans Arabic", "Segoe UI", Tahoma,
+    system-ui, sans-serif;
+  --font-display: "Noto Naskh Arabic", "Amiri", "IBM Plex Sans Arabic", serif;
+  --font-mono: "IBM Plex Sans Arabic", ui-monospace, "SF Mono", Menlo, Consolas,
+    monospace;
+
+  --color-paper: #f2efe8;
+  --color-paper-elevated: #faf8f3;
+  --color-paper-sunken: #e8e3d8;
+  --color-ink: #1c1917;
+  --color-ink-muted: #5c574f;
+  --color-ink-subtle: #8a8478;
+  --color-forest: #2f4a42;
+  --color-forest-fg: #f2efe8;
+  --color-forest-soft: #dce6e2;
+  --color-rust: #9a3f3a;
+  --color-rust-fg: #faf8f3;
+  --color-rust-soft: #f3e6e2;
+  --color-stone: #d9d3c7;
+  --color-stone-strong: #c4bdb0;
+
+  --color-cat-contract: #2f4a42;
+  --color-cat-test: #6b5344;
+  --color-cat-mail: #4a5560;
+  --color-cat-arb: #3d4450;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  --shadow-border:
+    0px 0px 0px 1px rgba(28, 25, 23, 0.06), 0px 1px 2px -1px rgba(28, 25, 23, 0.06),
+    0px 2px 4px 0px rgba(28, 25, 23, 0.04);
+  --shadow-border-hover:
+    0px 0px 0px 1px rgba(28, 25, 23, 0.1), 0px 1px 2px -1px rgba(28, 25, 23, 0.08),
+    0px 4px 10px 0px rgba(28, 25, 23, 0.06);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-paper);
+    color: var(--color-ink);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar {
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+    filter: blur(3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.reveal {
+  animation: fade-up 400ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.reveal-d1 {
+  animation-delay: 40ms;
+}
+.reveal-d2 {
+  animation-delay: 80ms;
+}
+.reveal-d3 {
+  animation-delay: 120ms;
+}
+.reveal-d4 {
+  animation-delay: 160ms;
+}
+.reveal-d5 {
+  animation-delay: 200ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-d1,
+  .reveal-d2,
+  .reveal-d3,
+  .reveal-d4,
+  .reveal-d5 {
+    animation: none;
+  }
+}

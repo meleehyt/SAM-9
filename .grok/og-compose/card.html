@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: "Naskh";
+        src: url("NotoNaskhArabic-Bold.ttf") format("truetype");
+        font-weight: 700;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Naskh";
+        src: url("NotoNaskhArabic-SemiBold.ttf") format("truetype");
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "Naskh";
+        src: url("NotoNaskhArabic-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        width: 1280px;
+        height: 720px;
+        overflow: hidden;
+        background: #f2efe8;
+      }
+      .stage {
+        position: relative;
+        width: 1280px;
+        height: 720px;
+        background: url("paper.jpg") center / cover no-repeat;
+      }
+      .lockup {
+        position: absolute;
+        left: 160px;
+        right: 210px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .title {
+        font-family: "Naskh", serif;
+        font-weight: 700;
+        color: #1c1917;
+        line-height: 1.1;
+      }
+      .title .line1 {
+        display: block;
+        font-size: 104px;
+      }
+      .title .line2 {
+        display: block;
+        font-size: 70px;
+        margin-top: 4px;
+      }
+      .rule {
+        width: 132px;
+        height: 2px;
+        background: #9a3f3a;
+        margin: 22px 0 16px;
+      }
+      .caption {
+        font-family: "Naskh", serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.7;
+        color: #2f4a42;
+        max-width: 760px;
+      }
+      .docket {
+        margin-top: 12px;
+        font-family: "Naskh", serif;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 0.2em;
+        color: #7a7468;
+        direction: ltr;
+        unicode-bidi: isolate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="lockup">
+        <h1 class="title">
+          <span class="line1">مؤنة</span>
+          <span class="line2">ضد أجرو</span>
+        </h1>
+        <div class="rule"></div>
+        <p class="caption">مؤنة للخدمات الغذائية ضد أجرو ألجهزة التحكم</p>
+        <p class="docket">SCCA-Arb-1016</p>
+      </div>
+    </div>
+  </body>
+</html>

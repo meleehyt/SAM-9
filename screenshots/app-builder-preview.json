@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "مؤنة ضد أجرو — الخط الزمني للتحكيم",
+      "hasCanvas": false,
+      "bodyTextLen": 9077,
+      "bodyTextHash": "d2850007a1b491f0e32e0074e1ed7050db39ca4341abd32c9e8151943b4975cd",
+      "bodyTextPrefix": "انتقل إلى الخط الزمني المركز السعودي للتحكيم التجاري SCCA-Arb-10",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "مؤنة ضد أجرو — الخط الزمني للتحكيم",
+      "hasCanvas": false,
+      "bodyTextLen": 9053,
+      "bodyTextHash": "6952b8b303d48a4e973d502419470b001b3e9b8a898cb43853d34d33c35d672b",
+      "bodyTextPrefix": "انتقل إلى الخط الزمني المركز السعودي للتحكيم التجاري SCCA-Arb-10",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

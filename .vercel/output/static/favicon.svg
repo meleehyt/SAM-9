@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="مؤنة ضد أجرو">
+  <rect width="32" height="32" rx="7" fill="#2F4A42"/>
+  <rect x="7" y="5.5" width="18" height="21" rx="2" fill="#F2EFE8"/>
+  <rect x="10" y="9.5" width="9" height="1.8" rx="0.9" fill="#1C1917"/>
+  <rect x="10" y="13.5" width="12" height="1.6" rx="0.8" fill="#7A7468"/>
+  <rect x="10" y="17.2" width="8" height="1.6" rx="0.8" fill="#7A7468"/>
+  <circle cx="21.2" cy="22.2" r="3.1" fill="#9A3F3A"/>
+</svg>
